@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DA0B08B3C14375504F683AA /* Pods_AuthSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF884AE92221FD0C35D01D56 /* Pods_AuthSocialNetwork.framework */; };
 		986F1622213451B0005981A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F1621213451B0005981A8 /* AppDelegate.swift */; };
 		986F1624213451B0005981A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F1623213451B0005981A8 /* ViewController.swift */; };
 		986F1627213451B0005981A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F1625213451B0005981A8 /* Main.storyboard */; };
 		986F1629213451B1005981A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986F1628213451B1005981A8 /* Assets.xcassets */; };
 		986F162C213451B1005981A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F162A213451B1005981A8 /* LaunchScreen.storyboard */; };
+		986F163D21346267005981A8 /* VKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F163C21346267005981A8 /* VKHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02DFF35D3C723378E3EB1669 /* Pods-AuthSocialNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthSocialNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthSocialNetwork/Pods-AuthSocialNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		986F161E213451B0005981A8 /* AuthSocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthSocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		986F1621213451B0005981A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		986F1623213451B0005981A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		986F1628213451B1005981A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		986F162B213451B1005981A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986F162D213451B1005981A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		986F163C21346267005981A8 /* VKHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKHelper.swift; sourceTree = "<group>"; };
+		BF884AE92221FD0C35D01D56 /* Pods_AuthSocialNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthSocialNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD23FD68319FB2E186472CFA /* Pods-AuthSocialNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthSocialNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthSocialNetwork/Pods-AuthSocialNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DA0B08B3C14375504F683AA /* Pods_AuthSocialNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D2BC969084FD2F24CFAA2D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF884AE92221FD0C35D01D56 /* Pods_AuthSocialNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		881310ED04D893F45BED51F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD23FD68319FB2E186472CFA /* Pods-AuthSocialNetwork.debug.xcconfig */,
+				02DFF35D3C723378E3EB1669 /* Pods-AuthSocialNetwork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		986F1615213451B0005981A8 = {
 			isa = PBXGroup;
 			children = (
 				986F1620213451B0005981A8 /* AuthSocialNetwork */,
 				986F161F213451B0005981A8 /* Products */,
+				881310ED04D893F45BED51F6 /* Pods */,
+				6D2BC969084FD2F24CFAA2D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,55 @@
 		986F1620213451B0005981A8 /* AuthSocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				986F1621213451B0005981A8 /* AppDelegate.swift */,
-				986F1623213451B0005981A8 /* ViewController.swift */,
-				986F1625213451B0005981A8 /* Main.storyboard */,
-				986F1628213451B1005981A8 /* Assets.xcassets */,
-				986F162A213451B1005981A8 /* LaunchScreen.storyboard */,
-				986F162D213451B1005981A8 /* Info.plist */,
+				986F163A2134620A005981A8 /* Helper */,
+				986F163921346200005981A8 /* Controllers */,
+				986F1638213461EA005981A8 /* Storyboards */,
+				986F1637213461D6005981A8 /* Supporting Files */,
+				986F1635213461C9005981A8 /* Application */,
 			);
 			path = AuthSocialNetwork;
+			sourceTree = "<group>";
+		};
+		986F1635213461C9005981A8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				986F1621213451B0005981A8 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		986F1637213461D6005981A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				986F1628213451B1005981A8 /* Assets.xcassets */,
+				986F162D213451B1005981A8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		986F1638213461EA005981A8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				986F1625213451B0005981A8 /* Main.storyboard */,
+				986F162A213451B1005981A8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		986F163921346200005981A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				986F1623213451B0005981A8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		986F163A2134620A005981A8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				986F163C21346267005981A8 /* VKHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 986F1630213451B1005981A8 /* Build configuration list for PBXNativeTarget "AuthSocialNetwork" */;
 			buildPhases = (
+				8A5C5552E376D0BA76F55022 /* [CP] Check Pods Manifest.lock */,
 				986F161A213451B0005981A8 /* Sources */,
 				986F161B213451B0005981A8 /* Frameworks */,
 				986F161C213451B0005981A8 /* Resources */,
+				56117C8B1EAF991C409249C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +199,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56117C8B1EAF991C409249C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AuthSocialNetwork/Pods-AuthSocialNetwork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/VK-ios-sdk/VK_ios_sdk.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VK_ios_sdk.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthSocialNetwork/Pods-AuthSocialNetwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5C5552E376D0BA76F55022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthSocialNetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		986F161A213451B0005981A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				986F163D21346267005981A8 /* VKHelper.swift in Sources */,
 				986F1624213451B0005981A8 /* ViewController.swift in Sources */,
 				986F1622213451B0005981A8 /* AppDelegate.swift in Sources */,
 			);
@@ -278,17 +387,21 @@
 		};
 		986F1631213451B1005981A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD23FD68319FB2E186472CFA /* Pods-AuthSocialNetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FX7X5MR74;
-				INFOPLIST_FILE = AuthSocialNetwork/Info.plist;
+				INFOPLIST_FILE = "AuthSocialNetwork/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.AuthSocialNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,17 +409,21 @@
 		};
 		986F1632213451B1005981A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02DFF35D3C723378E3EB1669 /* Pods-AuthSocialNetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FX7X5MR74;
-				INFOPLIST_FILE = AuthSocialNetwork/Info.plist;
+				INFOPLIST_FILE = "AuthSocialNetwork/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = elezov.AuthSocialNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

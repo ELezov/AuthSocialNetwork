@@ -1,0 +1,16 @@
+PODS:
+  - VK-ios-sdk (1.4.6)
+
+DEPENDENCIES:
+  - VK-ios-sdk
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  VK-ios-sdk: 7fd48bc5aaa6b96c3197c1987eb6593f2ea67331
+
+PODFILE CHECKSUM: ce20d008f01d2340bdb21fd810b71526ef5bfb5b
+
+COCOAPODS: 1.5.0
